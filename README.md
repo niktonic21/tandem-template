@@ -1,3 +1,2 @@
-# tandem-template
-
-Expo React Native + Web template with typescript, eslint and redux setup
+# expoTemplate
+Expo web and mobile template with redux
