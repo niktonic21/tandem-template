@@ -1,7 +1,7 @@
 {
     "expo": {
-        "name": "Slovak Hockey Referees",
-        "slug": "refsMobileWeb",
+        "name": "Tandem RN+Web template",
+        "slug": "tandem-template",
         "platforms": ["ios", "android", "web"],
         "version": "1.0.0",
         "orientation": "portrait",
