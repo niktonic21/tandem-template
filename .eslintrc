@@ -29,7 +29,8 @@
         "firebaseLog": true,
         "firebaseBoolKey": true,
         "firebaseStringKey": true,
-        "firebaseIntKey": true
+        "firebaseIntKey": true,
+        "__DEV__": true
     },
     "rules": {
         "comma-dangle": ["error", {
