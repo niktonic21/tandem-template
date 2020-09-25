@@ -5,6 +5,7 @@ import { isWeb } from '@layout';
 import HomeScreen from '../screens/HomeScreen';
 import { HomeParamList } from '../utils/NavigationTypes';
 import LinksScreen from '../screens/LinksScreen';
+import OnboardingScreen from '../screens/OnboardingScreen';
 
 const headerMode = isWeb ? 'none' : 'screen';
 
@@ -12,7 +13,7 @@ const HomeStack = createStackNavigator<HomeParamList>();
 
 export default function HomeNavigator() {
     return (
-        <HomeStack.Navigator headerMode={headerMode}>
+        <HomeStack.Navigator headerMode={headerMode} initialRouteName="OnboardingScreen">
             <HomeStack.Screen
                 name="HomeScreen"
                 component={HomeScreen}
@@ -23,6 +24,7 @@ export default function HomeNavigator() {
                 component={LinksScreen}
                 options={{ headerTitle: 'Links' }}
             />
+            <HomeStack.Screen name="OnboardingScreen" component={OnboardingScreen} />
         </HomeStack.Navigator>
     );
 }

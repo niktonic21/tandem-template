@@ -6,4 +6,5 @@ export type RootStackParamList = {
 export type HomeParamList = {
     HomeScreen: undefined;
     LinksScreen: undefined;
+    OnboardingScreen: undefined;
 };
