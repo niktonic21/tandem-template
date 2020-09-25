@@ -1,0 +1,109 @@
+{
+  "$schema": "../../node_modules/@eva-design/dss/schema/schema.json",
+  "version": 0,
+  "strict": {
+    "border-radius-medium": 18.2,
+    "border-radius-large": 22.5,
+    "button-height-medium": 36,
+    "button-height-large": 45,
+    "button-text-font-family": "Ubuntu-Bold",
+    "text-font-family": "OpenSans",
+    "text-heading-1-font-size": 24,
+    "text-heading-1-font-weight": "600",
+    "text-heading-2-font-weight": "400",
+    "text-heading-3-font-weight": "600",
+    "text-heading-4-font-weight": "400",
+    "text-heading-5-font-weight": "600",
+    "text-heading-6-font-weight": "600",
+    "text-paragraph-2-font-size": 14,
+    "text-paragraph-2-font-weight": "400",
+    "text-caption-2-font-weight": "400"
+  },
+  "components": {
+    "Button": {
+      "meta": {
+        "scope": "all",
+        "parameters": {
+          "backgroundColor": {
+            "type": "string"
+          },
+          "borderRadius": {
+            "type": "number"
+          },
+          "height": {
+            "type": "number"
+          },
+          "minHeight": {
+            "type": "number"
+          },
+          "textFontFamily": {
+            "type": "string"
+          }
+        },
+        "appearances": {},
+        "variantGroups": {},
+        "states": {}
+      },
+      "appearances": {
+        "filled": {
+          "mapping": {},
+          "variantGroups": {
+            "status": {
+              "primary": {
+                "state": {
+                  "disabled": {
+                    "backgroundColor": "white"
+                  }
+                }
+              }
+            },
+            "size": {
+              "medium": {
+                "borderRadius": "border-radius-medium",
+                "textFontFamily": "button-text-font-family",
+                "height": "button-height-medium",
+                "minHeight": 0
+              },
+              "large": {
+                "borderRadius": "border-radius-large",
+                "textFontFamily": "button-text-font-family",
+                "height": "button-height-large",
+                "minHeight": 0
+              }
+            }
+          }
+        },
+        "outline": {
+          "mapping": {},
+          "variantGroups": {
+            "status": {
+              "primary": {
+                "state": {
+                  "disabled": {
+                    "backgroundColor": "white"
+                  }
+                }
+              }
+            },
+            "size": {
+              "medium": {
+                "borderRadius": "border-radius-medium",
+                "textFontFamily": "button-text-font-family",
+                "height": "button-height-medium",
+                "minHeight": 0,
+                "backgroundColor": "white"
+              },
+              "large": {
+                "borderRadius": "border-radius-large",
+                "textFontFamily": "button-text-font-family",
+                "height": "button-height-large",
+                "minHeight": 0,
+                "backgroundColor": "white"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
