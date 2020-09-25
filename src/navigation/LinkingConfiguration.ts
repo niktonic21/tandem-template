@@ -7,7 +7,8 @@ export default {
             Root: {
                 screens: {
                     HomeScreen: 'home',
-                    LinksScreen: 'links'
+                    LinksScreen: 'links',
+                    OnboardingScreen: 'onboarding'
                 }
             },
             NotFound: '*'
