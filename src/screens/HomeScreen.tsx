@@ -151,7 +151,10 @@ const HomeScreen: React.FC<IHomeScreen> = ({ navigation }) => {
                 <View style={styles.getStartedContainer}>
                     <DevelopmentModeNotice />
                     <Text style={styles.getStartedText}>Open up the code for this screen:</Text>
-                    <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
+                    <View
+                        testID="welcome"
+                        style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
+                    >
                         <MonoText>screens/HomeScreen.js</MonoText>
                     </View>
                     <Text style={styles.getStartedText}>
@@ -170,6 +173,7 @@ const HomeScreen: React.FC<IHomeScreen> = ({ navigation }) => {
             <View style={styles.tabBarInfoContainer}>
                 <Text style={styles.tabBarInfoText}>This is a info bottom bar</Text>
                 <TouchableOpacity
+                    testID="go-to-link-screen-id"
                     onPress={goToLinkScreen}
                     style={[styles.codeHighlightContainer, styles.navigationFilename]}
                 >

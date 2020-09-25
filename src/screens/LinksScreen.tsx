@@ -9,8 +9,9 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fafafa'
     },
-    contentContainer: {
-        paddingTop: 15
+    header: {
+        fontSize: 20,
+        padding: 15
     },
     optionIconContainer: {
         marginRight: 12
@@ -55,24 +56,29 @@ const OptionButton = ({ icon, label, onPress, isLastOption }: IOptionButton) => 
 );
 
 const LinksScreen = () => (
-    <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-        <OptionButton
-            icon="md-school"
-            label="Read the Expo documentation"
-            onPress={() => WebBrowser.openBrowserAsync('https://docs.expo.io')}
-        />
-        <OptionButton
-            icon="md-compass"
-            label="Read the React Navigation documentation"
-            onPress={() => WebBrowser.openBrowserAsync('https://reactnavigation.org')}
-        />
-        <OptionButton
-            icon="ios-chatboxes"
-            label="Ask a question on the forums"
-            onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
-            isLastOption
-        />
-    </ScrollView>
+    <>
+        <Text testID="links-list-id" style={styles.header}>
+            Links list
+        </Text>
+        <ScrollView style={styles.container}>
+            <OptionButton
+                icon="md-school"
+                label="Read the Expo documentation"
+                onPress={() => WebBrowser.openBrowserAsync('https://docs.expo.io')}
+            />
+            <OptionButton
+                icon="md-compass"
+                label="Read the React Navigation documentation"
+                onPress={() => WebBrowser.openBrowserAsync('https://reactnavigation.org')}
+            />
+            <OptionButton
+                icon="ios-chatboxes"
+                label="Ask a question on the forums"
+                onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
+                isLastOption
+            />
+        </ScrollView>
+    </>
 );
 
 export default LinksScreen;
