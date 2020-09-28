@@ -2,6 +2,7 @@
 Expo web and mobile template with redux
 
 # Instalation
+ - remove node_modules, yarn.lock, pods and podfile.lock if exist
  - yarn install
  - yarn ios
  - yarn web
