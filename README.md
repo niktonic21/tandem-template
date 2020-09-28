@@ -10,8 +10,13 @@ Expo web and mobile template with redux
 # detox
  If ios and web build is working correctly: 
 
-  For testing iOS, first download this build and copy it to e2e/bin/ folder. Name of the build have to be "Exponent.app" (e2e/bin/Exponent.app) then run in project root directory "detox test --configuration ios"
+  For testing iOS, in project root directory: 
+    - run "detox build --configuration ios" 
+    - run ios simualtor with metro "yarn ios"
+    - then run "detox test --configuration ios"
 
-  For testing web, first install web local server "yarn global add serve" and start it with "serve public", then run "detox test --configuration web"
-
-
+  For testing web, in project root directory:
+    - create web build "yarn web-build"
+    - install web local server "yarn global add serve"
+    - start server "serve web-build", (local server e.g. "http://localhost:5000" have to be same as in package.json web configuration)
+    - run "detox test --configuration web"
