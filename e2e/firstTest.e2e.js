@@ -15,8 +15,8 @@ describe('Example', () => {
     });
 
     it('should have home screen', async () => {
-        const welcomElement = element(by.id('welcome'));
-        await expect(welcomElement).toBeVisible();
+        const welcomeElement = element(by.id('welcome'));
+        await expect(welcomeElement).toBeVisible();
     });
 
     it('should show world screen after tap', async () => {
