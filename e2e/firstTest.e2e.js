@@ -8,7 +8,7 @@ const { reloadApp } = require('detox-expo-helpers');
 describe('Example', () => {
     beforeEach(async () => {
         if (isWeb) {
-            //await device.disableSynchronization();
+            await device.disableSynchronization();
         } else {
             await reloadApp();
         }
