@@ -10,6 +10,7 @@ npm-debug.*
 web-build/
 web-report/
 e2e/bin/
+codeceptjs/output/
 
 # macOS
 .DS_Store
